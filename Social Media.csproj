@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3E1489D-8212-4CA3-83FE-B91797891058}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommentsForm.Designer.cs">
+      <DependentUpon>CommentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create Post Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create Post Form.Designer.cs">
+      <DependentUpon>Create Post Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel Form.Designer.cs">
+      <DependentUpon>Admin Panel Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="EditProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProfileForm.Designer.cs">
+      <DependentUpon>EditProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Form.Designer.cs">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message Form.Designer.cs">
+      <DependentUpon>Message Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilePageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfilePageForm.Designer.cs">
+      <DependentUpon>ProfilePageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration Form.Designer.cs">
+      <DependentUpon>Registration Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CommentsForm.resx">
+      <DependentUpon>CommentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create Post Form.resx">
+      <DependentUpon>Create Post Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel Form.resx">
+      <DependentUpon>Admin Panel Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Form.resx">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message Form.resx">
+      <DependentUpon>Message Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registration Form.resx">
+      <DependentUpon>Registration Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultUser.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome_bg.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
