@@ -1,6 +1,6 @@
 #  Social Media Platform
 
-A simple, elegant console-based "social media application" where users can register, log in, create posts, like posts, manage profiles, and send friend requests.
+A basic "social media application" where users can register, log in, create posts, like posts, manage profiles, and send friend requests.
 
 
 ##  Features
